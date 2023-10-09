@@ -13,20 +13,12 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0));
+
+        if (Input.GetMouseButtonDown(0))
         {
-            if(gunCd>0)
-            {
-                gunCd -= Time.deltaTime;
-            }
-            else if(gunCd<=0)
-            {
-                gunCd = 0.5f;
-                Shoot();
-            }
-            
+            Shoot();
         }
-        
+
     }
 
     void Shoot()
